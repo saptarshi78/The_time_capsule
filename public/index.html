@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Capsule Messages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Capsule Messages</h1>
+
+        <!-- Message Creation Form -->
+        <div id="createMessage">
+            <h2>Create New Message</h2>
+            <form id="messageForm">
+                <textarea id="messageText" rows="4" placeholder="Enter your message" required></textarea>
+                <input type="date" id="releaseDate" required>
+                <input type="time" id="releaseTime" required>
+                <button type="submit">Create Time Capsule</button>
+            </form>
+        </div>
+
+        <!-- Message Retrieval -->
+        <div id="retrieveMessage">
+            <h2>Retrieve Message</h2>
+            <form id="retrieveForm">
+                <input type="text" id="messageId" placeholder="Enter Message ID" required>
+                <button type="submit">Retrieve Message</button>
+            </form>
+        </div>
+
+        <!-- Message Display -->
+        <div id="messageDisplay" class="hidden">
+            <h3>Retrieved Message:</h3>
+            <p id="displayedMessage"></p>
+            <p id="messageTimestamp"></p>
+        </div>
+
+        <!-- Countdown Display -->
+        <div id="countdownDisplay" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
