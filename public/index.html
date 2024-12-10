@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Background Video -->
+    <video autoplay muted loop>
+        <source src="https://cdn.dribbble.com/users/3955525/screenshots/14171488/media/fee8fbc971827ddff4ea836e3372303d.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <div class="container">
         <h1>Time Capsule Messages</h1>
 
@@ -38,7 +44,10 @@
         </div>
 
         <!-- Countdown Display -->
-        <div id="countdownDisplay" class="hidden"></div>
+        <div id="countdownDisplay" class="hidden">
+            <h3>Countdown to Release:</h3>
+            <p id="countdownTimer"></p>
+        </div>
     </div>
 
     <script src="script.js"></script>
