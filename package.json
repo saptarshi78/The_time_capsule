@@ -1,11 +1,29 @@
 {
+  "name": "time-capsule",
+  "version": "1.0.0",
+  "description": "A Time Capsule Web Application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "vercel dev",
+    "build": "babel src -d build",
+    "clean": "rm -rf build"
+  },
   "dependencies": {
+    "@vercel/node": "^2.10.3",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
-    "express": "^4.21.1",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
     "moment": "^2.30.1",
     "mongoose": "^8.8.4",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
     "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/preset-env": "^7.26.0"
   }
 }
